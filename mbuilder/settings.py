@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)eohh1tc+nt(ckh6_-kjl=y1q!kcv6+pz@wk&s=g=p_v19cm@s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://gold-important-lobster.cyclic.cloud']
 
 
 # Application definition
