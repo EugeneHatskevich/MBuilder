@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Words list</title>
+</head>
+<body>
+<h1>Words list</h1>
+
+<div>
+    <table border="1">
+        <tr>
+            <th>Word 1</th>
+            <th>Word 2</th>
+        </tr>
+        {% for word in words %}
+            <tr>
+                <th>
+                    {{ word.first }}
+                </th>
+                <th>
+                    {{ word.second }}
+                </th>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div>
+    <a href={% url 'add_word' %}>Add word</a>
+</div>
+</body>
+</html>
