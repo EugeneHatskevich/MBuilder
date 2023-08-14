@@ -3,6 +3,9 @@ from django.shortcuts import HttpResponse
 
 
 # Create your views here.
+from django.views.decorators.csrf import csrf_protect
+
+
 def home_page(request):
     return render(request, 'home.html')
 
@@ -18,6 +21,7 @@ def words_list(request):
     return render(request, 'words_list.html', context=context)
 
 
+@csrf_protect
 def add_word(request):
     if request.method == 'GET':
         return render(request, 'add_word.html')

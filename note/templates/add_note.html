@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form method="post" action="">
+    <label for="note_text">Note text</label>
+    <input type="text" name="note_text"/>
+    <br>
+    <button type="submit">Save</button>
+    {% csrf_token %}
+</form>
+</body>
+</html>
